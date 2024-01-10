@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -7,59 +8,63 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./asset/css/RoomControl.css">
-<!--   <link rel="icon" type="image/png" href="/asset/image/eg.png"> -->
+  <!--   <link rel="icon" type="image/png" href="/asset/image/eg.png"> -->
   <title>Echo-System</title>
-    <meta name="description" content="Echo-Globe is a web-based chat application that allows you to create and join chat rooms to exchange text messages, photos, videos, and files in real-time. Your privacy and security are our top priority.">
-    <meta name="keywords" content="Echo-Globe, Secure Chat, Anonymous Chat, Real-Time Communication, Privacy, Messaging, File Sharing">
-    <meta name="author" content="INNAK">
+  <meta name="description"
+    content="Echo-System is a web-based chat application that allows you to create and join chat rooms to exchange text messages, photos, videos, and files in real-time. Your privacy and security are our top priority.">
+  <meta name="keywords"
+    content="Echo-System, Secure Chat, Anonymous Chat, Real-Time Communication, Privacy, Messaging, File Sharing">
+  <meta name="author" content="INNAK">
 </head>
+
 <body>
-    <div class="body" >
-        <div class="container">
-            <div class="connection">
-                <div class="box">
-                  <div class="card-header rounded shadow">
-                    <div class="title">Echo-System</div>
-                  </div>
-                  <div class="card-body">
-                    <div>
-                        <div id="notification" class="notes d-none" role="alert"></div>
-                    </div>
-                    <div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="input-box">
-                            <input id="name" type="text"  placeholder="Enter your Name" required>
-                            <div class="underline"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="input-box">
-                              <input id="roomID" type="text"  placeholder="Enter room ID" required>
-                              <div class="underline"></div>
-                            </div>
-                          </div>
-                        <div class="col-md-12 mt-1">
-                          <div class="input-box button text-center"> 
-                            <button class="createroom  btn-lg  shadow"  id="createbtn">Create Room</button>
-                            <button class="joinerroom  btn-lg shadow"  id="joinbtm">Join Room</button>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mt-5">
-                            <div class="text-center text-light">
-                                <b> By<a href="https://instagram.com/innak_official/" target="_blank" class="link"> Nithish & Rajesh</a></p>
-                              <p><a href="https://echoglobe.github.io/user-manual/" target="_blank" class="link">User Manual and Terms </a></p>
-                              <p class="text-centre">v1.0.0 </p>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
+  <div class="body">
+    <div class="container">
+      <div class="connection">
+        <div class="box">
+          <div class="card-header rounded shadow">
+            <div class="title">Echo-System</div>
+          </div>
+          <div class="card-body">
+            <div>
+              <div id="notification" class="notes d-none" role="alert"></div>
+            </div>
+            <div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="input-box">
+                    <input id="name" type="text" placeholder="Enter your Name" required>
+                    <div class="underline"></div>
                   </div>
                 </div>
-              </div>  
+                <div class="col-md-12">
+                  <div class="input-box">
+                    <input id="roomID" type="text" placeholder="Enter room ID" required>
+                    <div class="underline"></div>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-1">
+                  <div class="input-box button text-center">
+                    <button class="createroom  btn-lg  shadow" id="createbtn">Create Room</button>
+                    <button class="joinerroom  btn-lg shadow" id="joinbtm">Join Room</button>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                  <div class="text-center text-secondary">
+                    <b> By<a href="#" target="_blank" class="link"> Nithish & Rajesh</a></p>
+                      <p><a href="/user-manual/" target="_blank" class="link">User Manual and Terms </a></p>
+                      <p class="text-centre">v1.0.0 </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/simple-peer/simplepeer.min.js"></script>
   <script src="./asset/js/RoomControl.js" type="module"> </script>
 </body>
+
 </html>
