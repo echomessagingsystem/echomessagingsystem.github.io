@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../asset/css/RoomControl.css">
+  <link rel="icon" type="image/png" href="../asset/image/eg.png">
+  <title>Echo-System Feedback</title>
+</head>
+<body>
+  <div class="body">
+    <div class="container">
+      <div class="connection">
+        <div class="box">
+          <div class="card-header rounded shadow">
+            <div class="title">Echo-System Feedback</div>
+          </div>
+          <div class="card-body">
+            <div>
+              <div id="notification" class="alert d-none" role="alert"></div>
+            </div>
+            <div>
+              <div class="row">
+                <div class="col-md-12 mt-1">
+                  <div class="">
+                    <textarea class="form-control" rows="5" placeholder="Enter your feedback here" id="feedback"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-1">
+                  <div class="input-box button text-center">
+                    <button class="createroom btn-lg shadow"  id="submit">Submit Feedback</button>
+                  </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                  <div class="text-center text-light">
+                    <p> By<a href="https://www.instagram.com/socialhub.innak/" target="_blank" class="link"> Nithish & Rajesh</a></p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/simple-peer/simplepeer.min.js"></script>
+  <script src="../asset/js/feedback.js" type="module"></script>
+</body>
+</html>
