@@ -7,6 +7,8 @@ justify-content: center;
 align-items: center;
 height: 100vh;
 background: linear-gradient(to left, #000000 0%, #686868 100%);
+background-image: url('../image/bg.png');
+background-size: contain;
 }
 
 
@@ -32,7 +34,6 @@ padding: 25px 30px;
 border-radius: 5px;
 box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.15);
 margin-bottom: 0%;
-
 }
 
 .box .title {
@@ -40,7 +41,7 @@ font-size: 30px;
 font-weight: 900;
 margin: 20px 0 10px 0;
 position: relative;
-color:rgb(228, 225, 225);
+color:rgb(0, 0, 0);
 }
 
 .box  .title:before{
