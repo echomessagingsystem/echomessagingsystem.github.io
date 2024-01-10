@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: linear-gradient(to left, #000000 0%, #686868 100%);
+}
+
+
+.connection{
+display: grid;
+height: 100%;
+margin-top: auto;
+place-items: center;
+background: transparent;
+}
+
+.footer{
+
+bottom: 0%;
+align-items: center;
+}
+.box {
+background: rgba(255, 255, 255, 0.201);
+backdrop-filter: blur(10px);
+max-width: 480px;
+height: 100%;
+padding: 25px 30px;
+border-radius: 5px;
+box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.15);
+margin-bottom: 0%;
+
+}
+
+.box .title {
+font-size: 30px;
+font-weight: 900;
+margin: 20px 0 10px 0;
+position: relative;
+color:rgb(228, 225, 225);
+}
+
+.box  .title:before{
+content: '';
+position: absolute;
+height: 4px;
+width: 30%;
+left: 0px;
+bottom: 3px;
+border-radius: 5px;
+background: linear-gradient(to left, #000000 0%, #686868 100%);
+}
+
+input {
+background: linear-gradient(to left, #c0bfbf 0%, #dedede 100%);
+color: rgb(0, 0, 0);
+border-radius: 5px;
+
+}
+
+
+.box .input-box{
+width: 100%;
+height: 45px;
+margin-top: 25px;
+position: relative;
+
+}
+.box .input-box input{
+width: 100%;
+height: 100%;
+font-size: 18px;
+border: none;
+}
+.box  .input-box select{
+width: 100%;
+height: 100%;
+outline: none;
+font-size: 14px;
+border: none;
+}
+.box .underline::before{
+content: '';
+position: absolute;
+height: 2px;
+width: 100%;
+background: #d2d2d2;
+left: 0;
+bottom: 0;
+}
+.box  .underline::after{
+content: '';
+position: absolute;
+height: 2px;
+width: 100%;
+background: linear-gradient(to left, #000000 0%, #686868 100%);
+left: 0;
+bottom: 0;
+transform: scaleX(0);
+transform-origin: left;
+transition: all 0.3s ease;
+}
+.box  .input-box input:focus ~ .underline::after,
+.box  .input-box input:valid ~ .underline::after{
+transform: scaleX(1);
+transform-origin: left;
+}
+.box  .button{
+margin: 50px 0 20px 0;
+}
+
+.createroom{
+background: linear-gradient(to left, #000000 0%, #686868 100%);
+font-size: 17px;
+color: #fff;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.createroom:hover{
+letter-spacing: 2px;
+background: linear-gradient(to left,#686868  0%, #000000  100%);
+}
+
+.joinerroom{
+background: linear-gradient(to left, #000000 0%, #686868 100%);
+font-size: 17px;
+color: #fff;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.joinerroom:hover{
+letter-spacing: 2px;
+background: linear-gradient(to left,#686868  0%, #000000  100%);
+}
