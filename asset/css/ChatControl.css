@@ -4,6 +4,10 @@ body{
     align-items: center;
     height: 100vh;
     background: linear-gradient(to left, #000000 0%, #686868 100%);
+    
+background-image:url('../image/bg.png');
+background-size: contain;
+/* background-repeat: no-repeat; */
 }
 .chat{
     position: fixed;
