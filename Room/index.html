@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../asset/css/ChatControl.css">
+  <link rel="icon" type="image/png" href="../asset/image/eg.png">
+  <title>Echo-Globe</title>
+</head>
+<body class="container">
+  <audio id="notificationSound">
+    <source src="../asset/sound/notification.wav" type="audio/wav">
+  </audio>
+  
+    <div class="chat">
+
+  <!-- The modal -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close"  id="closeImageModalBtn">&times;</span>
+    <img  id="modalImage">
+  </div>
+  </div>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close"   id="closeVideoModalBtn">&times;</span>
+      <video  id="modelVideo" controls>
+        Your browser does not support the video tag.
+      </video>
+
+  </div>
+  </div>
+
+<div id="selectedImageModel" class="modal">
+  <div class="modal-content">
+    <span class="close"  id="closeSelectedImageModalBtn">&times;</span>
+    <div class="image-grid" id="image-grid">
+      <!-- Add more images as needed -->
+    </div>
+    <button class="sendPhotos btn btn-primary mr-5 ml-5 mb-5"  id="sendPhotosBtn">Send <i class="fas fa-paper-plane"></i></button>
+</div>
+</div>
+
+
+<div id="selectedVideoModel" class="modal">
+  <div class="modal-content">
+    <span class="close"  id="closeSelectedVideoModalBtn">&times;</span>
+    <div class="video-grid" id="video-grid">
+      <!-- Add more images as needed -->
+    </div>
+    <button class="sendPhotos btn btn-success mr-5 ml-5 mb-5"  id="sendVideosBtn">Send <i class="fas fa-paper-plane"></i></button>
+</div>
+</div>
+
+
+
+        <div class="message-container">
+ 
+        </div>
+
+        <div class="addfilebox bg-secondary none">
+          <div class="row">
+        <div class="col-4">
+        <button class="btn btn-secondary"  id="uploadPhotosBtn">
+          <i class="fas fa-images"></i> Photo
+        </button>
+        
+        </div>
+        <div class="col-4">
+        <button class="btn btn-secondary"  id="uploadVideosBtn">
+          <i class="fas fa-film"></i> Video
+        </button>
+        </div>
+        <div class="col-4">
+        <button class="btn btn-secondary"  id="uploadFilesBtn"><i class="fas fa-file-lines"></i> Docs</button>
+        </div>
+        </div>
+        </div>
+       
+          <div class="input-container">
+            <button class="btn btn-primary rounded-circle mx-2"  id="openfileboxBtn"><i id="addfileicon" class="fas fa-plus"></i></button>
+            <textarea id="messageInput" class="form-control " placeholder="Type your message" maxlength="4096" ></textarea>
+          <button class=" btn btn-white text-primary " id="sendMessage"><i class="fas fa-paper-plane sendbtn"></i></button>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/simple-peer/simplepeer.min.js"></script>
+    <script src="../asset/js/ChatControls.js"  type="module"></script>
+    <script src="../asset/js/ChatCreaterControl.js"  type="module"></script>
+    <script src="../asset/js/ChatJoinerControl.js"  type="module"></script>
+
+</body>
+</html>
